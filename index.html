@@ -9,13 +9,13 @@
 <input id="Amount">
 <h3>From Currency</h3>
 <select id="from">
-    <option id="vnd1" >Vietnam</option>
-    <option id="usd1">USD</option>
+    <option value="VND">Vietnam</option>
+    <option value="USD">USD</option>
 </select>
 <h3>To Curency</h3>
 <select id="to">
-    <option id="vnd2">Vietnam</option>
-    <option id="usd2">USD</option>
+    <option value="VND">Vietnam</option>
+    <option value="USD">USD</option>
 </select>
 <br>
 <br>
@@ -26,18 +26,19 @@
         let a = Number(document.getElementById("Amount").value);
         let b = document.getElementById("from").value
         let f = document.getElementById("to").value
-        if (b =="Vietnam"){
+        let d = " ";
+        if (b =="VND"){
             if (f =="USD" ){
                 console.log(d=a/23000);}
             else {
                 console.log(d=a);}}
         else {
-            if (f=="Vietnam") {
+            if (f=="VND") {
                 console.log(d=a*23000);}
             else {
                 console.log(d=a);}
         }
-            alert(d);
+            document.getElementById("quydoitien").innerText = d;
         }
 </script>
 </body>
