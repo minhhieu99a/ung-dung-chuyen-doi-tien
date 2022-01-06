@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Chuyen doi tien te</title>
+</head>
+<body>
+<h3>Amount</h3>
+<input id="Amount">
+<h3>From Currency</h3>
+<select id="from">
+    <option id="vnd1" >Vietnam</option>
+    <option id="usd1">USD</option>
+</select>
+<h3>To Curency</h3>
+<select id="to">
+    <option id="vnd2">Vietnam</option>
+    <option id="usd2">USD</option>
+</select>
+<br>
+<br>
+<button onclick="Doitien()">Đổi tiền</button>
+<p id="quydoitien"></p>
+<script>
+    function Doitien() {
+        let a = Number(document.getElementById("Amount").value);
+        let b = document.getElementById("from").value
+        let f = document.getElementById("to").value
+        if (b =="Vietnam"){
+            if (f =="USD" ){
+                console.log(d=a/23000);}
+            else {
+                console.log(d=a);}}
+        else {
+            if (f=="Vietnam") {
+                console.log(d=a*23000);}
+            else {
+                console.log(d=a);}
+        }
+            alert(d);
+        }
+</script>
+</body>
+</html>
